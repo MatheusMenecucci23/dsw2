@@ -2,7 +2,8 @@
 body {
     font-family: Arial;
     margin: 0;
-    background-color: rgb(13, 22, 182)
+    background-color: rgb(206, 197, 197);
+    padding: 0;
 }
 
 
@@ -13,6 +14,10 @@ body {
     align-items: center; /* Centraliza verticalmente os elementos na barra de navegação */
     background-color: #ffffff;
     padding : 10px ;
+    z-index: 50;
+    height: 10vh;
+    height: auto; /* Adjust height to fit content */
+
 
 }
   
@@ -20,6 +25,8 @@ body {
 .navbar a {
     color: rgb(0, 0, 0);
     padding: 14px 20px;
+    padding: 10px; /* Adjust padding for smaller screens */
+
     text-decoration: none;
     
 }
@@ -31,6 +38,8 @@ body {
 }
 .navbar-right {
     margin-right: flex;
+    margin-right: 10px; /* Adjust spacing for smaller screens */
+
     
 }
 #cadastro { 
@@ -43,6 +52,8 @@ body {
     margin-left: flex;
     font-size: x-large;
     text-align: left;
+    margin-left: 10px; /* Adjust spacing for smaller screens */
+    font-size: medium; /* Adjust font size for smaller screens */
    
     
 }
@@ -73,28 +84,46 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    display: flex;
+
   }
   
   .content-box {
-    background: rgba(255, 255, 255, 0.7);
+    /*background: rgba(255, 255, 255, 0.7);*/
     padding: 20px;
     border-radius: 10px;
     width: 90%; /* Ajuste a largura conforme necessário */
     margin: 0 auto;
+    display: flex;
   }
   
-  .span-text {
-    display: inline-block;     
+  .main {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos na barra de pesquisa */
+}
+
+.span-text {
+    float:left;
     margin-top: 10px;
     text-align: left;
-    color :black;
+    color: black;
     font-size: large;
     font-weight: bold;
-  }
-  .span-text img {
-    width: 20px; 
-    margin-left: 10px; 
-  }
+    width: 600px;
+}
+
+.span-text1 img {
+    width: 20px;
+    margin-left: -8vh;
+    text-align: left;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    
+}
+
 
   .sobrenos {
     height: 100vh; 
@@ -189,4 +218,157 @@ body {
     padding: 20px;
     text-align: center;
     background: #ddd;
+}
+
+ .search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} 
+.search-btn{
+  width: 10px;
+  height: 10px;
+}
+.mapbox{
+  height: 90vh;
+  flex: 1;
+  
+}
+
+.mapbox iframe {
+  width: 100%;
+  height: 100%;
+}
+.sidebar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  background-color: #B3C4F2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #074C83;
+  size: 50rem;
+}
+
+.sidebar button {
+  padding-left: 15px;
+  font-size: 1rem;
+  width: 28vh;
+  text-align: left;
+  top:0px;
+  width: 100%; /* Take full width on smaller screens */
+
+}
+
+.sidebar button:hover {
+  background: none;
+  transition: 0.5s;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top:  0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.floating-button {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    right: 60px; /* Adjust the distance from the right as needed */
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    border-radius: 50%;
+    background-color: white; /* Default background color */
+    color: black; /* Change the text color as needed */
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure the button is above other elements */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    
+}
+
+.floating-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+.content-map{
+  width: 100%;
+  display: flex;
+}
+
+
+.btn-sidebar{
+  padding: 8px 8px 8px 32px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #074C83;
+  display: block;
+  transition: 0.3s;
+  z-index:2;
+  display: flex;
+  float: left;
+}
+.overlay-content {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: #fff;
+  height: 10vh;
+  width: 60vh;
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.span-text {
+  padding: 10px;
+  width: 300px; /* Ajuste o tamanho conforme necessário */
+  border: none;
+}
+
+.span-text1 {
+  padding: 10px;
+  cursor: pointer;
+  border:none;
+  right: 100px;
+
+
+}
+
+.span-text1 img {
+  width: 3vh; /* Ajuste o tamanho conforme necessário */
+  height: 3vh;
+  padding-left: 8vh;
+  border-radius: 10px;
+
+}
+input:focus{
+  box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
