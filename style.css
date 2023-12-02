@@ -338,8 +338,8 @@ body {
 
 .main {
   background-color: #fff;
-  height: 10vh;
-  width: 60vh;
+  height: 8vh;
+  width: 100vh;
   display: flex;
   border-radius: 10px;
   text-align: center;
@@ -347,8 +347,9 @@ body {
 
 .span-text {
   padding: 10px;
-  width: 300px; /* Ajuste o tamanho conforme necessário */
+  width: 100%; /* Ajuste o tamanho conforme necessário */
   border: none;
+  padding: 0px 0px 0px 20px;
 }
 
 .span-text1 {
