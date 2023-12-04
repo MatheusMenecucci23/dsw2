@@ -222,12 +222,24 @@ body {
 .br{
   font-size: 2em;
   margin: 10px;
-  padding: 10px; /* Adiciona preenchimento interno à caixa */
-  border: 2px solid #ff1100; /* Cor da borda azul, ajuste conforme necessário */
-  background-color: #3f92da;
+  padding: 10px;
+  /* border: 2px solid #ff1100; */
+  /* background-color: #3f92da; */
   text-align: center;
   margin-top: 5px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+/* input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
 
 .sobrenos p {    
   font-size: 2em;
