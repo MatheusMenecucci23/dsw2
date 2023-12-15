@@ -1,4 +1,10 @@
-# Projeto de Web2
+# Projeto de DSW2
+
+## Integrantes
+
+- Igor Kenji Kawai Ueno, 790769
+- Matheus Menecucci, 800310
+- Yago David Pimenta, 800273
 
 ## Uéder
 ### Sistema de alertas sobre o tempo em uma cidade
